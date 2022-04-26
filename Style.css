@@ -1,0 +1,183 @@
+body {
+    background-color: #deb887;
+    width: 100%;
+    margin: auto;
+    position:absolute;
+    text-align: center;
+    font-size: 18px;
+}
+
+#menu {
+    position: relative;
+    background-color:#3636363f;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#menu a {
+    font-weight:normal;
+    font-style: normal;
+    line-height: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80%;
+    color: #1b1b1b;
+    background-color: hsl(34, 57%, 70%);
+    border-radius: 1.5%;
+    padding: .1% 2%;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    font-style: italic;
+    background-color: #473d8b8e;
+    color: #f0f0f0;    
+}
+
+#overlaybg{
+    display: flex;
+    background: url("images/tv1l.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 0 1000px rgb(0, 0, 0, 0.3);
+    position:relative;
+    justify-content: center;
+    width: 100%;
+}
+
+#pagetitle {
+    line-height:8em;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Bebas Neue', sans-serif;
+    color: goldenrod;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 2.5em;
+}
+
+section{
+    position: relative;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1% auto;
+    justify-content: space-around;
+    background-color: #14141421;
+}
+
+.flex-item {
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 1.5%;
+    background: linear-gradient(#deb887, #14141400);
+}
+
+.gametitle {
+    background-color: #473d8b8e;
+    color: burlywood;
+    width: 100%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 150%;
+    line-height: 115%;
+}
+
+.image img {
+    float: left;
+    flex: content;
+    border-radius: 1.5%;
+    width: auto;
+    height: 40vh;
+    margin-right: 2%;
+}
+
+.flex-item p {
+    float:inline-end;
+    width: auto;
+    height: 33vh;    
+    background-color: #1b1b1b2d;
+    padding: inherit;
+    font-size: 1em;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color: #1b1b1b;
+    border-radius: 1.5%;
+    overflow-y: scroll;
+}
+
+.flex-item p > em {
+    font-weight: 500;
+    color: #473d8b;
+}
+
+footer {
+    text-align: justify;
+    padding: 1% 2%;
+    position: relative;
+    font-weight:300;
+    font-style: normal;
+    font-family: sans-serif;
+    font-size: .8em;
+    line-height: 1em;
+    background-color: #473d8b8e;
+    color: #1b1b1b;
+}
+
+footer a {
+    font-style: italic;
+    font-weight: 500;
+    color: #1b1b1b;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #1b1b1b;
+    background-color: burlywood;
+    text-decoration: none;
+}
+
+footer em {
+    font-weight: bold;
+}
+
+@media (max-width:991px) {
+    section{
+        position: sticky;
+    }
+    .image img {
+        margin: auto;
+        width: 68vw;
+        height: auto;
+    }
+
+    .flex-item p {
+        margin: auto;
+        width: 66vw;
+        height: 35vw;
+    }
+
+    #overlaybg {
+        background: url("images/tv1.png");
+        background-position: center;
+        background-size:cover;
+        box-shadow: inset 0px 0px 0 1000px rgb(0, 0, 0, 0.3);
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    #pagetitle {
+        line-height: 3em;
+    }
+}
